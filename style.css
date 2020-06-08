@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* 1) Navigation bar */
+.nav {
+    height: 20px;
+    background-color: rgb(50, 50, 50);
+    padding: 10px 15px;
+    position: relative;
+}
+
+.nav p {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+}
+
+
+/* 2) Upload Button */
+#custom-button {
+    margin-bottom: 13px;
+    height: 30%;
+    width: calc(100% - 2*0px);
+    padding: 5px;
+    color: white;
+    background-color: rgb(21, 142, 168);
+    border: 0px;
+    cursor: pointer;
+    font-size: 34px;
+}
+
+#custom-button:hover {
+    background-color: #00b28f;
+
+}
+
+#custom-text {
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #aaa;
+}
+
+
+/* 3) Map */
+#map {
+    height: 60%;
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+
+/* 4) Route Summary */
+.route-info {
+    background-color: rgb(250, 250, 250);
+    margin-bottom: 28px;
+}
+
+.route-info h1, h3, h4 {
+    text-align: center;
+}
+
+#routeName {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.summary-label {
+    padding-top: 35px;
+    padding-bottom: 15px;
+    font-weight: 100;
+}
+
+.summary-list {
+    list-style-type: none;
+    display: table;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+    text-align: center;
+}
+
+.summary-list li {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 0 0 20px 0;
+}
+
+
+/* Media Queries for Responsive Sizig */
+@media only screen and (min-width: 1141px) {
+    .summary-list {
+        width: 100%;
+    }   
+    .summary-list li {
+        margin: 0 25px 0 25px;
+    }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1140px) {
+    .summary-list {
+        width: 90%;
+    }
+    .summary-list li {
+        width: calc(100% / 6);
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
+    .summary-list {
+        width: 90%;
+    }
+    .summary-list li {
+        width: calc(100% / 3);
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .summary-list {
+        width: 90%;
+    }
+    .summary-list li {
+        width: calc(100% / 2);
+    }
+}
+
+
+/* 5) Graphs */
+.graphs {
+    position: relative;
+}
+
+.graph-display {
+    height: auto;
+    width: 100%;
+    position: absolute;
+}
+
+#chartContainerHr {
+    top: 428px;
+}
